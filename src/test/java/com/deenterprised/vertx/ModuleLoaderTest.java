@@ -24,6 +24,7 @@ public class ModuleLoaderTest {
 
     @Test
     public void thatAnExceptionIsThrow_ifNoModulesAreRegistered() throws Exception {
+        sut.load();
         overrideProviders(new LinkedHashMap<>());
 
         catchException(sut).load();
