@@ -6,4 +6,6 @@ public interface BootstrapModuleProvider {
 
 
     Module get();
+
+    int priority();
 }

@@ -1,0 +1,2 @@
+com.deenterprised.vertx.spi.SomeBoostrapModuleProvider
+com.deenterprised.vertx.spi.HighPriorityBoostrapModuleProvider
