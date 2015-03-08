@@ -15,7 +15,14 @@ apply plugin: 'idea'
 
 sourceCompatibility = 1.8
 
-
+configurations {
+    provided {
+        dependencies.all { dep ->
+            configurations.default.exclude group: dep.group, module: dep.name
+        }
+    }
+    compile.extendsFrom provided
+}
 
 repositories {
     mavenCentral()
@@ -32,8 +39,8 @@ apply from: "dependencies.gradle"
 
 dependencies {
 
-    compile libraries.vertx
-    compile libraries.guice
+    provided libraries.vertx
+    provided libraries.guice
     compile libraries.guava
 
     testCompile libraries.junit
