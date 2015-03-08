@@ -20,6 +20,7 @@ ext.libraries = [
 
         vertx: [
                 [group: 'io.vertx', name: 'vertx-core', version: vertxVersion],
+                [group: 'io.vertx', name: 'vertx-rx-java', version: vertxVersion],
                 [group: 'io.vertx', name: 'vertx-service-factory', version: vertxVersion]
         ],
 
