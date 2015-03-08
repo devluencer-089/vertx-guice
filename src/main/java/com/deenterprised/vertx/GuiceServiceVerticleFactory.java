@@ -13,7 +13,7 @@ public class GuiceServiceVerticleFactory implements VerticleFactory {
 
     @Override
     public int order() {
-        return delegate.order();
+        return delegate.order() - 1;
     }
 
     @Override
