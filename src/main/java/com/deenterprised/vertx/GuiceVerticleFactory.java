@@ -31,7 +31,7 @@ public class GuiceVerticleFactory implements VerticleFactory {
 
     @Override
     public String prefix() {
-        return "java";
+        return "guice";
     }
 
     @Override
