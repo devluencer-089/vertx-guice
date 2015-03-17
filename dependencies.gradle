@@ -1,6 +1,6 @@
 ext {
 
-    guiceVersion = '3.0'
+    guiceVersion = '4.0-beta5'
     guavaVersion = '18.0'
 
     hamcrestVersion = '1.3'
